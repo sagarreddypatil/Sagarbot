@@ -12,3 +12,12 @@ services:
       - SPOTIFY_PASSWORD=${SPOTIFY_PASSWORD}
       - DISCORD_USER_ID=${DISCORD_USER_ID} # Discord user ID of the user you want Aoede to follow
       - SPOTIFY_BOT_AUTOPLAY=true # Autoplay similar songs when your music ends (true/false)
+
+# version: "3"
+# services:
+#   jmusicbot:
+#     image: ghcr.io/yojoshb/jmusicbot-docker
+#     container_name: jmusicbot
+#     volumes:
+#       - ./jmusic-config:/config
+#     restart: unless-stopped
